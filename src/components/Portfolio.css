@@ -1,0 +1,58 @@
+.port {
+  text-align: center;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+.slider {
+  height: auto;
+  margin: auto;
+  overflow: hidden;
+}
+.slider .slider-track {
+  display: flex;
+  animation: scroll 40s linear infinite;
+  -webkit-animation: scroll 40s linear infinite;
+  width: calc(200px * 14);
+}
+.slider .slide {
+  width: 200px;
+}
+
+.imgg {
+  width: 300px;
+  height: 200px;
+  padding-left: 20%;
+}
+.title-partner{
+  padding-bottom: 5%;
+}
+.main-partner{
+  text-align: center;
+  margin-top: 10%;
+}
+.partner{
+  width: 200px;
+  height: 100px;
+  padding-left: 1%;
+
+}
+
+@keyframes scroll {
+  100% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}
+
+@media (max-width: 668px) {
+  .imgg {
+    width: 100px;
+    height: 50px;
+    padding-left: 20%;
+  }
+  .partner{
+    width: 100px;
+    height: 80px;
+  
+  }
+}
